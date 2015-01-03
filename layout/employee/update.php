@@ -82,7 +82,7 @@
     
     			<div class="span10 offset1">
     				<div class="row">
-		    			<h3>Update A Employee</h3>
+		    			<h3>Update a Employee</h3>
 		    		</div>
     		
 	    			<form class="form-horizontal" action="./employee/update.php?id=<?php echo $id?>" method="post">
