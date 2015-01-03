@@ -68,7 +68,7 @@ else {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Update A Client</h3>
+				<h3>Update a Client</h3>
 			</div>
 
 			<form class="form-horizontal"

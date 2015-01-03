@@ -58,7 +58,7 @@ if ( !empty($_POST)) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Client</h3>
+				<h3>Create a Client</h3>
 			</div>
 
 			<form class="form-horizontal" action="./client/create.php"
