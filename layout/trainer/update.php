@@ -43,7 +43,7 @@ if ( !empty($_POST)) {
 
 
 
-		
+
 	// update data
 	if ($valid) {
 		$sql = "trainerUpdate";
@@ -100,15 +100,18 @@ else {
 					<label class="control-label">Technology Name</label>
 					<div class="controls">
 						<select name="supportedby" type="text">
-							<option value="0">Select</option>
+							<option value="0">Select a technology</option>
 							<?php foreach ($technologyData as $row): ?>
 							<option <?php if($row['id'] == $technologyid) {  ?>
-								selected="selected" value="<?=$row['id']?>"><?php }else {?>
-								value="<?=$row['id']?>">
+								selected="selected" value="<?=$row['id']?>">
+								<?php }else {?>
+								value="
+								<?=$row['id']?>
+								">
 								<?php
-							}
-							echo $row ['name'];
-							?>
+}
+echo $row ['name'];
+?>
 							</option>
 
 							<?php endforeach ?>

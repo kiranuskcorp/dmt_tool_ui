@@ -92,7 +92,7 @@ if ( !empty($_POST)) {
 						<label class="control-label">Technology Name</label>
 						<div class="controls">
 							<select name="technologyid" type="text">
-								<option value="0">Select</option>
+								<option value="0">Select a technology</option>
 								<?php foreach ($technologyData as $row): ?>
 								<option value="<?=$row['id']?>">
 									<?php	echo $row ['name'];?>
