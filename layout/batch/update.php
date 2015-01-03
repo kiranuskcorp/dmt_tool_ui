@@ -106,7 +106,7 @@ else {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Update A Batch</h3>
+				<h3>Update a Batch</h3>
 			</div>
 
 			<form class="form-horizontal"

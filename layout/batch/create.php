@@ -18,10 +18,10 @@ if (! empty ( $_POST )) {
 	// $updatedDate = $_POST['updatedDate'];
 	$description = $_POST ['description'];
 	$time = $_POST ['time'];
-	
+
 	// validate input
 	$valid = true;
-	
+
 	if (empty ( $technologyid )) {
 		$valid = false;
 	}
@@ -43,7 +43,7 @@ if (! empty ( $_POST )) {
 	if (empty ( $time )) {
 		$valid = false;
 	}
-	
+
 	// insert data
 	if ($valid) {
 		$sql = "batchInsert";
@@ -56,21 +56,21 @@ if (! empty ( $_POST )) {
 				$status,
 				$createdDate,
 				$description,
-				$time 
+				$time
 		);
 		GlobalCrud::setData ( $sql, $sqlValues );
 		header ( "Location:../?content=10" );
 	} else {
-		
+
 		header ( "Location:../?content=11" );
 	}
 }
 
 /*
  * if ( !empty($_GET)) {
- * echo "<script type='text/javascript'>alert('get');</script>";
- * }
- */
+* echo "<script type='text/javascript'>alert('get');</script>";
+* }
+*/
 ?>
 
 
@@ -87,7 +87,7 @@ if (! empty ( $_POST )) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Batch</h3>
+				<h3>Create a Batch</h3>
 			</div>
 
 			<form class="form-horizontal" action="./batch/create.php"
@@ -101,18 +101,19 @@ if (! empty ( $_POST )) {
 					  </div>  -->
 
 				<div class="control-group">
-				<div class="form-group required">
-					<label class="control-label">Technology Name</label>
-					<div class="controls">
-						<select name="technologyid" type="text">
-							<option value="0">Select</option>
-                         	<?php foreach ($dataTechnology as $row): ?>
-							<option value="<?=$row['id']?>"> <?php	echo $row ['name'];?>
-							<?php endforeach ?>
- 							</option>
-						</select>
+					<div class="form-group required">
+						<label class="control-label">Technology Name</label>
+						<div class="controls">
+							<select name="technologyid" type="text">
+								<option value="0">Select</option>
+								<?php foreach ($dataTechnology as $row): ?>
+								<option value="<?=$row['id']?>">
+									<?php	echo $row ['name'];?>
+									<?php endforeach ?>
+								</option>
+							</select>
+						</div>
 					</div>
-				</div>
 				</div>
 
 				<!-- <div class="control-group ">
@@ -123,27 +124,28 @@ if (! empty ( $_POST )) {
 					  </div> -->
 
 				<div class="control-group">
-				<div class="form-group required">
-					<label class="control-label">Trainer Name</label>
-					<div class="controls">
-						<select name="trainerid" type="text">
-							<option value="0">Select</option> 
-                         	<?php foreach ($dataTrainer as $row): ?>
-							<option value="<?=$row['id']?>"> <?php	echo $row ['name'];?>
-							<?php endforeach ?>
- 							</option>
-						</select>
+					<div class="form-group required">
+						<label class="control-label">Trainer Name</label>
+						<div class="controls">
+							<select name="trainerid" type="text">
+								<option value="0">Select</option>
+								<?php foreach ($dataTrainer as $row): ?>
+								<option value="<?=$row['id']?>">
+									<?php	echo $row ['name'];?>
+									<?php endforeach ?>
+								</option>
+							</select>
+						</div>
 					</div>
-				</div>
 				</div>
 				<div class="control-group ">
-				<div class="form-group required">
-					<label class="control-label">Start Date</label>
-					<div class="controls">
-						<input name="startdate" type="date" placeholder="start date"
-							value="<?php echo !empty($startdate)?$startdate:'';?>" required>
+					<div class="form-group required">
+						<label class="control-label">Start Date</label>
+						<div class="controls">
+							<input name="startdate" type="date" placeholder="start date"
+								value="<?php echo !empty($startdate)?$startdate:'';?>" required>
+						</div>
 					</div>
-				</div>
 				</div>
 
 				<div class="control-group ">
@@ -174,13 +176,15 @@ if (! empty ( $_POST )) {
 					<div class="controls">
 						<select name="status">
 							<option value="">Select</option>
-							 <?php foreach ($statusconstants as $constant): ?>
-						<option value="<?=$constant?>"> <?php	echo $constant;?>
-						<?php endforeach ?>
+							<?php foreach ($statusconstants as $constant): ?>
+							<option value="<?=$constant?>">
+								<?php	echo $constant;?>
+								<?php endforeach ?>
+						
 						</select>
 					</div>
 				</div>
-				
+
 				<!--  <div class="control-group ">
 					    <label class="control-label">Time</label>
 					   <div class="controls">
@@ -193,14 +197,16 @@ if (! empty ( $_POST )) {
 					<div class="controls">
 						<select name="time">
 							<option value="">Select</option>
-							 <?php foreach ($constants as $constant): ?>
-						<option value="<?=$constant?>"> <?php	echo $constant;?>
-						<?php endforeach ?>
+							<?php foreach ($constants as $constant): ?>
+							<option value="<?=$constant?>">
+								<?php	echo $constant;?>
+								<?php endforeach ?>
+						
 						</select>
 					</div>
 				</div>
-				
-				
+
+
 				<div class="control-group ">
 					<label class="control-label">Description</label>
 					<div class="controls">
