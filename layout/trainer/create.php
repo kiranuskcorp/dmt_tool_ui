@@ -70,7 +70,7 @@ if ( !empty($_POST)) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Trainer</h3>
+				<h3>Create a Trainer</h3>
 			</div>
 
 			<form class="form-horizontal" action="./trainer/create.php"
