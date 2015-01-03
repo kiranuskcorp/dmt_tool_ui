@@ -69,7 +69,7 @@ else {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Update A Tasks</h3>
+				<h3>Update a Tasks</h3>
 			</div>
 
 			<form class="form-horizontal" action="./todo/update.php?id=<?php echo $id?>" method="post">

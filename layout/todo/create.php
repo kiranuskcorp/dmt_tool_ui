@@ -62,7 +62,7 @@ if ( !empty($_POST)) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Tasks</h3>
+				<h3>Create a Tasks</h3>
 			</div>
 
 			<form class="form-horizontal" action="./todo/create.php"
