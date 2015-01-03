@@ -10875,7 +10875,7 @@ var effectClip = $.effects.effect.clip = function( o, done ) {
 		animate.css( position, distance / 2 );
 	}
 
-	// Create Animation Object:
+	// Create animation Object:
 	animation[ size ] = show ? distance : 0;
 	animation[ position ] = show ? 0 : distance / 2;
 
