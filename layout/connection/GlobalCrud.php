@@ -20,7 +20,7 @@ class GlobalCrud {
 		$sql = SqlConstants::$allSelect [$value];
 		$q = $pdo->prepare ( $sql );
 		$q->execute ( array (
-				$id 
+				$id
 		) );
 		Database::disconnect ();
 	}
@@ -54,6 +54,6 @@ class GlobalCrud {
 		$constants = SqlConstants::$totalConstants [$value];
 		return $constants;
 	}
-	
+
 }
 ?>
