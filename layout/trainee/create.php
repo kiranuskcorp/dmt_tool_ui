@@ -112,7 +112,7 @@ if (! empty ( $_POST )) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Trainee</h3>
+				<h3>Create a Trainee</h3>
 			</div>
 
 			<form class="form-horizontal" action="./trainee/create.php"
