@@ -73,7 +73,7 @@
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Update A Course</h3>
+				<h3>Update a Course</h3>
 			</div>
 
 			<form class="form-horizontal"
