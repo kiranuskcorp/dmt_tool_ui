@@ -99,7 +99,7 @@ else {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Update A Interview</h3>
+				<h3>Update a Interview</h3>
 			</div>
 
 			<form class="form-horizontal"

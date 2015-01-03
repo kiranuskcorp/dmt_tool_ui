@@ -83,7 +83,7 @@ if ( !empty($_POST)) {
 
 		<div class="span10 offset1">
 			<div class="row">
-				<h3>Create A Interview</h3>
+				<h3>Create a Interview</h3>
 			</div>
 
 			<form class="form-horizontal" action="./interview/create.php"
