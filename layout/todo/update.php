@@ -19,6 +19,7 @@ if ( !empty($_POST)) {
 	$status = $_POST['status'];
 	$assignedto = $_POST['assignedto'];
 	$updatedDate=date("Y/m/d");
+	//$estimatedtime=$_POST['estimatedtime'];
 	$description = $_POST['description'];
 	//$name = $_POST['time'];
 
@@ -33,12 +34,13 @@ if ( !empty($_POST)) {
 	if (empty($assignedto)) {
 		$valid = false;
 	}
+	
 
 
 	// update data
-	if ($valid) {
+	if ($valid) {                                                              
 		$sql = "todoUpdate";
-		$sqlValuesForUpdate = array($category,$status,$assignedto,$updatedDate,$description,$id);
+		$sqlValuesForUpdate = array($category,$status,$assignedto,$updatedDate$description,$id);
 		GlobalCrud::update($sql,$sqlValuesForUpdate);
 		header("Location:../?content=19");
 	}
@@ -51,6 +53,7 @@ else {
 	$category = $data['category'];
 	$status = $data['status'];
 	$assignedto = $data['assigned_to'];
+	//$estimatedtime=$data['estimated_time'];
 	$description = $data['description'];
 }
 ?>
@@ -72,7 +75,8 @@ else {
 				<h3>Update a Tasks</h3>
 			</div>
 
-			<form class="form-horizontal" action="./todo/update.php?id=<?php echo $id?>" method="post">
+			<form class="form-horizontal"
+				action="./todo/update.php?id=<?php echo $id?>" method="post">
 				<div class="control-group">
 					<label class="control-label">Category</label>
 					<div class="controls">
@@ -82,29 +86,31 @@ else {
 					</div>
 				</div>
 
-				
+
 				<div class="control-group ">
 					<label class="control-label">Status</label>
 
 					<div class="controls">
-						
-						
+
+
 						<select name="status" type="text">
 							<option value="">Select</option>
 							<?php foreach ($constants as $constant): ?>
-								
-							<option <?php if($constant == $status) {  ?>
-								selected="selected" value="<?=$constant?>">
-								<?php
-								}
-								else {
-								?>
+
+							<option <?php if($constant == $status) {  ?> selected="selected"
 								value="<?=$constant?>">
+								<?php
+}
+else {
+								?>
+								value="
+								<?=$constant?>
+								">
 								<?php
 							}
 							echo  $constant;
 							?>
-							<?php endforeach ?>
+								<?php endforeach ?>
 							</option>
 						</select>
 					</div>
@@ -118,14 +124,16 @@ else {
 					<div class="controls">
 						<select name="assignedto">
 							<option value="0">Select</option>
-                              <?php foreach ($selecteddata as $row): ?>
+							<?php foreach ($selecteddata as $row): ?>
 							<option <?php if($row['id'] == $assignedto) {  ?>
 								selected="selected" value="<?=$row['id']?>">
 								<?php
-								}
-								else {
+}
+else {
 								?>
-								value="<?=$row['id']?>">
+								value="
+								<?=$row['id']?>
+								">
 								<?php
 							}
 							echo $row ['name'];
@@ -137,14 +145,30 @@ else {
 					</div>
 				</div>
 
+
+				<!-- <div class="control-group ">
+					<label class="control-label">Estimated Days </label>
+					<div class="controls">
+						<input name="estimatedtime" type="text"
+							placeholder="estimated days"
+							value="<?php echo !empty($estimatedtime)?$estimatedtime:'';?>"
+							required>
+
+					</div>
+				</div> -->
+
+
+
+
 				<div class="control-group">
 					<label class="control-label">Description</label>
 					<div class="controls">
 						<textarea name="description" type="text" placeholder="description">
-							<?php echo !empty($description)?$description:'';?></textarea>
-                     </div>
+							<?php echo !empty($description)?$description:'';?>
+						</textarea>
+					</div>
 				</div>
-				
+
 				<div class="form-actions">
 					<button type="submit" class="btn btn-success">Update</button>
 					<a class="btn" href="index.php">Back</a>

@@ -13,6 +13,7 @@ if ( !empty($_POST)) {
 	$status = $_POST['status'];
 	$assignedto=$_POST['assignedto'];
 	$createdDate=date("Y/m/d");
+	//$estimatedtime = $_POST['estimatedtime'];
 	$description=$_POST['description'];
 
 
@@ -27,6 +28,8 @@ if ( !empty($_POST)) {
 	if (empty($assignedto)) {
 		$valid = false;
 	}
+	
+
 
 
 	// insert data
@@ -110,6 +113,17 @@ if ( !empty($_POST)) {
 						</div>
 					</div>
 				</div>
+
+				<!--  <div class="control-group ">
+					<label class="control-label">Estimated Days </label>
+					<div class="controls">
+						<input name="estimatedtime" type="text"
+							placeholder="estimated days"
+							value="<?php echo !empty($estimatedtime)?$estimatedtime:'';?>"
+							required>
+
+					</div>
+				</div>-->
 
 				<div class="control-group ">
 					<label class="control-label">Description</label>

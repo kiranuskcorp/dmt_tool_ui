@@ -65,22 +65,17 @@
 
 </head>
 <body>
+
 	<!-- Begin Wrapper -->
 	<div class="container-fluid">
 		<!-- Begin Header -->
 		<div>
-			<h3>
-				Data Management Tool <img src="./img/logo.gif" align="right"
-					width="150">
-			</h3>
+			<h2>Data Management Tool</h2>
+			<img src="./img/logo.gif" align="right" width="20px">
 		</div>
+
 		<!-- End Header -->
 		<!-- Begin Naviagtion -->
-
-
-
-
-
 
 		<div id="navigation">
 

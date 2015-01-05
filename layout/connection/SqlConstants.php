@@ -61,7 +61,7 @@ class SqlConstants {
 			"batchSelectById" => "SELECT * FROM batch where id = ?",
 
 			"todoSelect" => "SELECT t.*, e.name as employee_name  FROM todo t, employee e  WHERE t.assigned_to= e.id",
-			"todoInsert" => "INSERT INTO todo (category, status, assigned_to, created_date,description) values(?, ?,?, ?,?)",
+			"todoInsert" => "INSERT INTO todo (category, status, assigned_to, created_date,description) values( ?,?,?,?,?)",
 			"todoDelete" => "DELETE FROM todo  WHERE id = ?",
 			"todoUpdate" => "UPDATE todo set  category=?,status=?,assigned_to=?,updated_date=?,description=? WHERE id = ?",
 			"todoSelectById" => "SELECT * FROM todo where id = ?",
