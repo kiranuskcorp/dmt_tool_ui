@@ -40,7 +40,7 @@ if ( !empty($_POST)) {
 	// update data
 	if ($valid) {                                                              
 		$sql = "todoUpdate";
-		$sqlValuesForUpdate = array($category,$status,$assignedto,$updatedDate$description,$id);
+		$sqlValuesForUpdate = array($category,$status,$assignedto,$updatedDate,$description,$id);
 		GlobalCrud::update($sql,$sqlValuesForUpdate);
 		header("Location:../?content=19");
 	}
