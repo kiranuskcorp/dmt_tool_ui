@@ -7,7 +7,7 @@ $traineeData = GlobalCrud::getData('traineeSelect');
 $employeeData = GlobalCrud::getData('employeeSelect');
 $clientData = GlobalCrud::getData('clientSelect');
 $timeConstants = explode(',', GlobalCrud::getConstants("timeConstants"));
-$constants = explode(',', GlobalCrud::getConstants("statusConstants"));
+$interviewconstants = explode(',', GlobalCrud::getConstants("interviewconstants"));
 
 if ( !empty($_POST)) {
 
@@ -171,9 +171,9 @@ if ( !empty($_POST)) {
 					<div class="controls">
 						<select name="status" type="text">
 							<option value="">Select</option>
-							<?php foreach ($constants as $constant): ?>
-							<option value="<?=$constant?>">
-								<?php echo $constant;?>
+							<?php foreach ($interviewconstants as $interviewconstant): ?>
+							<option value="<?=$interviewconstant?>">
+								<?php echo $interviewconstant;?>
 								<?php endforeach ?>
 							</option>
 						</select>
