@@ -1,7 +1,7 @@
 <?php
 class SqlConstants {
 	static $allSelect = array(
-			"technologySelect" => "SELECT * FROM technology ORDER BY id DESC",
+			"technologySelect" => "SELECT * FROM technology ORDER BY name asc",
 			"technologyInsert" => "INSERT INTO technology (name,created_date,description) values(?, ?,?)",
 			"technologyDelete" => "DELETE FROM technology  WHERE id = ?",
 			"technologyUpdate" => "UPDATE technology set name = ?,  updated_date =?, description =? WHERE id = ?",
@@ -13,7 +13,7 @@ class SqlConstants {
 			"trainerUpdate" => "UPDATE trainer set name=?, technology_id=?,phone=?,email=?,updated_date=?,description=? WHERE id = ?",
 			"trainerSelectById" => "SELECT * FROM trainer where id = ?",
 
-			"employeeSelect" => "SELECT * FROM employee ORDER BY id DESC",
+			"employeeSelect" => "SELECT * FROM employee ORDER BY name asc",
 			"employeeInsert" => "INSERT INTO employee (name,phone,email,role,base_salary,created_date,description) values(?, ?,?,?,?,?,?)",
 			"employeeDelete" => "DELETE FROM employee  WHERE id = ?",
 			"employeeUpdate" => "UPDATE employee set name=?,phone=?,email=?,role=?,base_salary=?,updated_date=?,description=? WHERE id = ?",
@@ -29,13 +29,13 @@ class SqlConstants {
 
 			"traineeSelect" => "SELECT tr.*, cl.name as client_name, te.name as technology_name
 			FROM trainee tr, client cl, technology te
-			WHERE tr.client_id = cl.id and tr.technology_id = te.id order by tr.id desc",
+			WHERE tr.client_id = cl.id and tr.technology_id = te.id order by tr.name assc",
 			"traineeInsert" => "INSERT INTO trainee (name, email,alternate_phone,client_id,skype_id,timezone,batch_id,created_date,description,phone,technology_id) values(?, ?, ?,?,?,?,?,?,?,?,?)",
 			"traineeDelete" => "DELETE FROM trainee  WHERE id = ?",
 			"traineeUpdate" => "UPDATE trainee set name=?, email=?,alternate_phone=?,client_id=?,skype_id=?,timezone=?,batch_id=?,updated_date=?,description=?,phone=?,technology_id=? WHERE id = ?",
 			"traineeSelectById" => "SELECT * FROM trainee where id = ?",
 
-			"clientSelect" => "SELECT * FROM client ORDER BY id DESC",
+			"clientSelect" => "SELECT * FROM client ORDER BY name asc",
 			"clientInsert" => "INSERT INTO client (name, address,created_date,description) values(?, ?, ?,?)",
 			"clientDelete" => "DELETE FROM client  WHERE id = ?",
 			"clientUpdate" => "UPDATE client set name=?, address=?,updated_date=?,description=? WHERE id = ?",
