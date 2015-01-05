@@ -66,7 +66,7 @@ class SqlConstants {
 			"todoUpdate" => "UPDATE todo set  category=?,status=?,assigned_to=?,updated_date=?,description=? WHERE id = ?",
 			"todoSelectById" => "SELECT * FROM todo where id = ?",
 
-			"interviewSelect" => "SELECT i.*, c.name as client_name, tr.name as trainee_name ,e.name as employee_name FROM interview i, client c, trainee tr,employee e  WHERE i.client_id = c.id and i.trainee_id = tr.id and i.assisted_by=e.id order by i.id desc",
+			"interviewSelect" => "SELECT i.*, c.name as client_name, tr.name as trainee_name ,e.name as employee_name FROM interview i, client c, trainee tr,employee e  WHERE i.client_id = c.id and i.trainee_id = tr.id and i.assisted_by=e.id order by i.date desc",
 			"interviewInsert" => "INSERT INTO interview ( trainee_id, assisted_by, client_id, interviewer, time, status, created_date, description, date) values(?, ?,?,?,?,?,?,?,?)",
 			"interviewDelete" => "DELETE FROM interview  WHERE id = ?",
 			"interviewUpdate" => "UPDATE interview set  trainee_id=?, assisted_by=?, client_id=?, interviewer=?, time=?, status=?,  updated_date=?, description=?, date=? WHERE id = ?",
