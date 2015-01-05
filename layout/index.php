@@ -69,10 +69,18 @@
 	<div class="container-fluid">
 		<!-- Begin Header -->
 		<div>
-			<h1>Usk Corp</h1>
+			<h3>
+				Data Management Tool <img src="./img/logo.gif" align="right"
+					width="150">
+			</h3>
 		</div>
 		<!-- End Header -->
 		<!-- Begin Naviagtion -->
+
+
+
+
+
 
 		<div id="navigation">
 
