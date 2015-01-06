@@ -13,7 +13,7 @@ if ( !empty($_POST)) {
 	$status = $_POST['status'];
 	$assignedto=$_POST['assignedto'];
 	$createdDate=date("Y/m/d");
-	//$estimatedtime = $_POST['estimatedtime'];
+	$estimatedtime = $_POST['estimatedtime'];
 	$description=$_POST['description'];
 
 
@@ -28,14 +28,17 @@ if ( !empty($_POST)) {
 	if (empty($assignedto)) {
 		$valid = false;
 	}
-	
+	if (empty($estimatedtime)) {
+		$valid = false;
+	}
+
 
 
 
 	// insert data
 	if ($valid) {
 		$sql = "todoInsert";
-		$sqlValues = array($category,$status,$assignedto,$createdDate,$description);
+		$sqlValues = array($category,$status,$assignedto,$estimatedtime,$createdDate,$description);
 		GlobalCrud::setData($sql,$sqlValues);
 		header("Location:../?content=19");
 	}
@@ -114,7 +117,7 @@ if ( !empty($_POST)) {
 					</div>
 				</div>
 
-				<!--  <div class="control-group ">
+				<div class="control-group ">
 					<label class="control-label">Estimated Days </label>
 					<div class="controls">
 						<input name="estimatedtime" type="text"
@@ -123,7 +126,7 @@ if ( !empty($_POST)) {
 							required>
 
 					</div>
-				</div>-->
+				</div>
 
 				<div class="control-group ">
 					<label class="control-label">Description</label>

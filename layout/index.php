@@ -65,14 +65,17 @@
 
 </head>
 <body>
+	<div>
+		<ul list style type="none">
+			<li><h1>Data Management Tool</h1></li>
+			<!-- 			/<li><img src="./img/logo.gif" align="right" width="340px"></li> -->
+		</ul>
+	</div>
 
 	<!-- Begin Wrapper -->
 	<div class="container-fluid">
 		<!-- Begin Header -->
-		<div>
-			<h2>Data Management Tool</h2>
-			<img src="./img/logo.gif" align="right" width="20px">
-		</div>
+
 
 		<!-- End Header -->
 		<!-- Begin Naviagtion -->

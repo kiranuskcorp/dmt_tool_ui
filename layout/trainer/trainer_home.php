@@ -15,6 +15,7 @@
 			<p>
 				<a href="?content=5" class="btn btn-default">
 				<i class="fa fa-plus-square"></i>&nbsp;Add</a>
+				<a href="./Excels/trainerexcel.php" class="btn btn-default btn-lg " role="button" ><i class="fa fa-file-excel-o"></i></a>
 			</p>
 			Search:<input id="filter" type="text" /> 
 			<table data-filter="#filter" class="footable">

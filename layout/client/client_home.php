@@ -9,7 +9,9 @@
 		<div class="row">
 			<p>
 				<a href="?content=8" class="btn btn-default"><i
-					class="fa fa-plus-square"></i>&nbsp;Add</a>
+					class="fa fa-plus-square"></i>&nbsp;Add</a> <a
+					href="./Excels/clientexcel.php" class="btn btn-default btn-lg "
+					role="button"><i class="fa fa-file-excel-o"></i> </a>
 			</p>
 			Search:<input id="filter" type="text" />
 			<table data-filter="#filter" class="footable">
@@ -29,7 +31,7 @@
 					$path .= "/layout/connection/GlobalCrud.php";
 					include_once($path);
 					$data = GlobalCrud::getData('clientSelect');
-					
+
 					foreach ($data as $row) {
 						echo '<tr>';
 						echo '<td>'. $row['name'] . '</td>';

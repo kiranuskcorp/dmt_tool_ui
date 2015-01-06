@@ -19,7 +19,7 @@ if ( !empty($_POST)) {
 	$status = $_POST['status'];
 	$assignedto = $_POST['assignedto'];
 	$updatedDate=date("Y/m/d");
-	//$estimatedtime=$_POST['estimatedtime'];
+	$estimatedtime=$_POST['estimatedtime'];
 	$description = $_POST['description'];
 	//$name = $_POST['time'];
 
@@ -34,13 +34,16 @@ if ( !empty($_POST)) {
 	if (empty($assignedto)) {
 		$valid = false;
 	}
-	
+	if (empty($estimatedtime)) {
+		$valid = false;
+	}
+
 
 
 	// update data
-	if ($valid) {                                                              
+	if ($valid) {
 		$sql = "todoUpdate";
-		$sqlValuesForUpdate = array($category,$status,$assignedto,$updatedDate,$description,$id);
+		$sqlValuesForUpdate = array($category,$status,$assignedto,$estimatedtime,$updatedDate,$description,$id);
 		GlobalCrud::update($sql,$sqlValuesForUpdate);
 		header("Location:../?content=19");
 	}
@@ -53,7 +56,7 @@ else {
 	$category = $data['category'];
 	$status = $data['status'];
 	$assignedto = $data['assigned_to'];
-	//$estimatedtime=$data['estimated_time'];
+	$estimatedtime=$data['estimated_time'];
 	$description = $data['description'];
 }
 ?>
@@ -146,7 +149,7 @@ else {
 				</div>
 
 
-				<!-- <div class="control-group ">
+				<div class="control-group ">
 					<label class="control-label">Estimated Days </label>
 					<div class="controls">
 						<input name="estimatedtime" type="text"
@@ -155,7 +158,7 @@ else {
 							required>
 
 					</div>
-				</div> -->
+				</div>
 
 
 

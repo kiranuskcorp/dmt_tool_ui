@@ -26,10 +26,10 @@ if (! empty ( $_POST )) {
 	$updatedDate = date ( "Y/m/d" );
 	$description = $_POST ['description'];
 	$time = $_POST ['time'];
-	
+
 	// validate input
 	$valid = true;
-	
+
 	if (empty ( $technologyid )) {
 		$valid = false;
 	}
@@ -42,7 +42,7 @@ if (! empty ( $_POST )) {
 	if (empty ( $enddate )) {
 		$valid = false;
 	}
-	
+
 	if (empty ( $duration )) {
 		$valid = false;
 	}
@@ -52,7 +52,7 @@ if (! empty ( $_POST )) {
 	if (empty ( $time )) {
 		$valid = false;
 	}
-	
+
 	// update data
 	if ($valid) {
 		$sql = "batchUpdate";
@@ -66,18 +66,18 @@ if (! empty ( $_POST )) {
 				$updatedDate,
 				$description,
 				$time,
-				$id 
+				$id
 		);
 		GlobalCrud::update ( $sql, $sqlValuesForUpdate );
-		
+
 		header ( "Location:../?content=10" );
 	}
-} 
+}
 
 else {
 	$sql = "batchSelectById";
 	$sqlValues = array (
-			$id 
+			$id
 	);
 	$data = GlobalCrud::selectById ( $sql, $sqlValues );
 	$technologyid = $data ['technology_id'];
@@ -123,28 +123,33 @@ else {
 					</div>
 				</div>  -->
 
-				  <div class="control-group">
+				<div class="control-group">
 					<label class="control-label">Technology</label>
 					<div class="controls">
 						<select name="technologyid" type="text">
 							<option value="0">Select</option>
-                            <?php foreach ($selecteddataTechnology as $row): ?>
-						<option <?php if($row['id'] == $technologyid) {  ?>
-								selected="selected" value="<?=$row['id']?>"> <?php
-							}
-							else {
-								?> value="<?=$row['id']?>" > <?php
+							<?php foreach ($selecteddataTechnology as $row): ?>
+							<option <?php if($row['id'] == $technologyid) {  ?>
+								selected="selected" value="<?=$row['id']?>">
+								<?php
+}
+else {
+								?>
+								value="
+								<?=$row['id']?>
+								" >
+								<?php
 							}
 							echo $row ['name'];
 							?>
- 							</option>
-							
-						<?php endforeach ?>
+							</option>
+
+							<?php endforeach ?>
 						</select>
 					</div>
 				</div>
-				
-				
+
+
 				<!-- <div class="control-group">
 					<label class="control-label">TrainerName</label>
 					<div class="controls">
@@ -153,24 +158,29 @@ else {
 
 					</div>
 				</div> -->
-				
-				  <div class="control-group">
+
+				<div class="control-group">
 					<label class="control-label">Trainer Name</label>
 					<div class="controls">
 						<select name="trainerid" type="text">
 							<option value="0">Select</option>
-                          <?php foreach ($selecteddataTrainer as $row): ?>
-						<option <?php if($row['id'] == $trainerid) {  ?>
-								selected="selected" value="<?=$row['id']?>"> <?php
-							}
-							else {
-								?> value="<?=$row['id']?>" > <?php
+							<?php foreach ($selecteddataTrainer as $row): ?>
+							<option <?php if($row['id'] == $trainerid) {  ?>
+								selected="selected" value="<?=$row['id']?>">
+								<?php
+}
+else {
+								?>
+								value="
+								<?=$row['id']?>
+								" >
+								<?php
 							}
 							echo $row ['name'];
 							?>
- 							</option>
-							
-						<?php endforeach ?>
+							</option>
+
+							<?php endforeach ?>
 						</select>
 					</div>
 				</div>
@@ -201,49 +211,59 @@ else {
 					</div>
 				</div>
 
-				 <div class="control-group">
+				<div class="control-group">
 					<label class="control-label">Status</label>
 					<div class="controls">
 						<select name="status" type="text">
 							<option value="0">Select</option>
-                          <?php foreach ($statusConstants as $constant): ?>
-						<option <?php if($constant == $status) {  ?> selected="selected"
-								value="<?=$constant?>"> <?php
-							}
-							else {
-								?> value="<?=$constant?>" > <?php
+							<?php foreach ($statusConstants as $constant): ?>
+							<option <?php if($constant == $status) {  ?> selected="selected"
+								value="<?=$constant?>">
+								<?php
+}
+else {
+								?>
+								value="
+								<?=$constant?>
+								" >
+								<?php
 							}
 							echo $constant;
 							?>
- 							</option>
-							
-						<?php endforeach ?>
+							</option>
+
+							<?php endforeach ?>
 						</select>
 					</div>
 				</div>
-				
-				
-				 <div class="control-group">
+
+
+				<div class="control-group">
 					<label class="control-label">Time</label>
 					<div class="controls">
 						<select name="time" type="text">
 							<option value="0">Select</option>
-                          <?php foreach ($constants as $constant): ?>
-						<option <?php if($constant == $time) {  ?> selected="selected"
-								value="<?=$constant?>"> <?php
-							}
-							else {
-								?> value="<?=$constant?>" > <?php
+							<?php foreach ($constants as $constant): ?>
+							<option <?php if($constant == $time) {  ?> selected="selected"
+								value="<?=$constant?>">
+								<?php
+}
+else {
+								?>
+								value="
+								<?=$constant?>
+								" >
+								<?php
 							}
 							echo $constant;
 							?>
- 							</option>
-							
-						<?php endforeach ?>
+							</option>
+
+							<?php endforeach ?>
 						</select>
 					</div>
 				</div>
-				
+
 				<div class="control-group">
 					<label class="control-label">Description</label>
 					<div class="controls">
@@ -252,7 +272,7 @@ else {
                         </textarea>
 					</div>
 				</div>
-				
+
 				<div class="form-actions">
 					<button type="submit" class="btn btn-success">Update</button>
 					<a class="btn" href="index.php">Back</a>

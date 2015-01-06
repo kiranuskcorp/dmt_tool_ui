@@ -34,7 +34,7 @@ if ( !empty($_POST)) {
 		$valid = false;
 	}
 
-		
+
 	// update data
 	if ($valid) {
 		$sql = "questionUpdate";
