@@ -259,7 +259,7 @@
 					break;
 
 					/* client_contact */
-				case 43 :
+			/* 	case 43 :
 					include './contact/contact_home.php';
 					break;
 				case 44 :
@@ -271,7 +271,7 @@
 
 				case 46 :
 					include './Excels/excels.php';
-					break;
+					break; */
 
 				default :
 					include './trainee/trainee_home.php';

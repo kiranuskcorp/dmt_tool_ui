@@ -20,8 +20,7 @@
 
 			Search:<input id="filter" type="text" />
 			<table data-filter="#filter" class="footable">
-
-				<thead>
+             <thead>
 					<tr>
 						<th>Name</th>
 						<th>Email</th>

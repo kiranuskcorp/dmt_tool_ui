@@ -6,7 +6,7 @@ include_once($path);
 $traineeData = GlobalCrud::getData('traineeSelect');
 $employeeData = GlobalCrud::getData('employeeSelect');
 $timeConstants = explode(',', GlobalCrud::getConstants("timeConstants"));
-$statusConstants = explode(',', GlobalCrud::getConstants("statusConstants"));
+$supportConstants = explode(',', GlobalCrud::getConstants("supportConstants"));
 $id = null;
 if ( !empty($_GET['id'])) {
 	$id = $_REQUEST['id'];
@@ -219,15 +219,15 @@ else {
 					<div class="controls">
 						<select name="status" type="text">
 							<option value="none">Select</option>
-							<?php foreach ($statusConstants as $statusConstant): ?>
-							<option <?php if($statusConstant == $status) {?>
-								selected="selected" value=" <?=$statusConstant?>">
+							<?php foreach ($supportConstants as $supportConstant): ?>
+							<option <?php if($supportConstant == $status) {?>
+								selected="selected" value=" <?=$supportConstant?>">
 								<?php }else {?>
 								value="
-								<?=$statusConstant?>
+								<?=$supportConstant?>
 								">
 								<?php }
-								echo $statusConstant;
+								echo $supportConstant;
 								?>
 							</option>
 

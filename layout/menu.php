@@ -9,9 +9,9 @@
 <li><a href="?content=13">Employee</a></li>
 <li><a href="?content=25">Course</a></li>
 <li><a href="?content=19">Tasks</a></li>
-<li><a href="?content=43">Contact</a></li>
+<!-- <li><a href="?content=43">Contact</a></li> -->
 <li><a href="?content=34">Question</a></li>
-<li><a href="?content=46">Excels</a></li>
+<!-- <li><a href="?content=46">Excels</a></li> -->
 
 <!-- <li><a href="?content=28">Recording</a></li>
 	<li><a href="?content=31">Pay slip</a></li> -->
