@@ -179,7 +179,7 @@ if (! empty ( $_POST )) {
 				<div class="control-group ">
 					<label class="control-label">Timezone</label>
 					<div class="controls">
-						<select name="time zone">
+						<select name="timezone">
 							<option value="">Select</option>
 							<?php foreach ($constants as $constant): ?>
 							<option value="<?=$constant?>">

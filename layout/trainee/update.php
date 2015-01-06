@@ -129,7 +129,7 @@ else {
 				<div class="control-group ">
 					<label class="control-label">Alternate Phone</label>
 					<div class="controls">
-						 <input name="alternate phone" type="tel"
+						 <input name="alternatephone" type="tel"
 							placeholder="alternate phone"
 							value="<?php echo !empty($alternatephone)?$alternatephone:'';?>"
 							required>

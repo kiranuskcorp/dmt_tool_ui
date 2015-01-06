@@ -217,16 +217,7 @@ else {
 						<select name="status" type="text">
 							<option value="0">Select</option>
 
-							<?php foreach ($statusConstants as $constant): ?>
-							<option <?php if($constant == $status) {  ?> selected="selected"
-								value="<?=$constant?>">
-								<?php
-}
-else {
-								?>
-								value="
-								<?=$constant?>
-								" >
+							
 								<?php
                           foreach ($supportConstants as $supportConstant): ?>
 							

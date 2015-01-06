@@ -39,10 +39,10 @@
 							   	echo '<td>'. $row['phone'] . '</td>';
 							   	echo '<td>'. $row['email'] . '</td>';
 							   	echo '<td>'. $row['role'] . '</td>';
-							   	//echo '<td>'. $row['base_salary'] . '</td>';
+							   	echo '<td>'. $row['base_salary'] . '</td>';
 							   //	echo '<td>'. $row['created_date'] . '</td>';
 							   //	echo '<td>'. $row['updated_date'] . '</td>';
-							   	echo '<td>'. $row['description'] . '</td>';
+							   	//echo '<td>'. $row['description'] . '</td>';
 							   	echo '<td>';
 							   	echo '<a href="#" data-toggle="tooltip" title="'. $row['description'] . '"><i class="fa fa-info-circle"></i></a>';
 							   	echo '<a href="?content=15&id='.$row['id'].'"><i class="icon-edit"></i></a>';
