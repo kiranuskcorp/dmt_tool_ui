@@ -8,7 +8,6 @@ $constants = explode(',', GlobalCrud::getConstants("todoConstants"));
 if ( !empty($_POST)) {
 
 	// keep track post values
-
 	$category = $_POST['category'];
 	$status = $_POST['status'];
 	$assignedto=$_POST['assignedto'];

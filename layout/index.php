@@ -60,23 +60,14 @@
 	color: red;
 }
 </style>
-
-
-
 </head>
 <body>
-	<div>
-		<ul list style type="none">
-			<li><h1>Data Management Tool</h1></li>
-			<!-- 			/<li><img src="./img/logo.gif" align="right" width="340px"></li> -->
-		</ul>
-	</div>
+	<img src="./img/logo.gif" align="right" width="120px">
 
 	<!-- Begin Wrapper -->
 	<div class="container-fluid">
 		<!-- Begin Header -->
-
-
+		<h2>Data Management Tool</h2>
 		<!-- End Header -->
 		<!-- Begin Naviagtion -->
 
@@ -259,17 +250,17 @@
 					break;
 
 					/* client_contact */
-			/* 	case 43 :
-					include './contact/contact_home.php';
+					/* 	case 43 :
+					 include './contact/contact_home.php';
 					break;
-				case 44 :
+					case 44 :
 					include './contact/create.php';
 					break;
-				case 45 :
+					case 45 :
 					include './contact/update.php';
 					break;
 
-				case 46 :
+					case 46 :
 					include './Excels/excels.php';
 					break; */
 
