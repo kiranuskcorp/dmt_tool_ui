@@ -84,6 +84,8 @@ class SqlConstants {
 			"supportUpdate" => "UPDATE support set  trainee_id=?,supported_by=?,start_date=?,end_date=?,allotted_time=?,end_client=?,status=?,technology_used=?,updated_date=?,description=? WHERE id = ?",
 			"supportSelectById" => "SELECT * FROM support where id = ?" ,
 
+			
+			"usercreds"=>"select * From user_creds"
 
 	)
 	;

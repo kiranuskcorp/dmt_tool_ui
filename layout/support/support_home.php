@@ -12,7 +12,7 @@
 				<a href="?content=41" class="btn btn-default"><i
 					class="fa fa-plus-square"></i>&nbsp;Add</a> <a
 					href="./Excels/supportexcel.php" class="btn btn-default btn-lg "
-					role="button"><i class="fa fa-file-excel-o"></i> </a>
+					role="button"><i class="fa fa-file-excel-o"></i> export</a>
 			</p>
 			Search:<input id="filter" type="text" />
 			<table data-filter="#filter" class="footable">
