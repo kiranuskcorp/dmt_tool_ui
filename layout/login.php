@@ -34,10 +34,15 @@ if (! empty ( $_POST )) {
 }
 ?>
 <html>
+<head>
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+</head>
 <body>
 	<div class="container">
 
-		<form class="form-horizontal" action="./login.php" method="post">
+		<form class="form-login" action="./login.php" method="post">
 			<div class="control-group">
 				<div class="form-group required">
 					<label class="control-label">User Name</label>

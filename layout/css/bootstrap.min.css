@@ -1726,6 +1726,12 @@ legend+.control-group {
 	margin-bottom: 0
 }
 
+ .form-login{
+	margin-top:100px;
+	margin-left:300px;
+	display:table
+}
+
 .form-horizontal input+.help-block, .form-horizontal select+.help-block,
 	.form-horizontal textarea+.help-block, .form-horizontal .uneditable-input+.help-block,
 	.form-horizontal .input-prepend+.help-block, .form-horizontal .input-append+.help-block
