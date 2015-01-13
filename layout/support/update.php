@@ -40,21 +40,7 @@ if ( !empty($_POST)) {
 	if (empty($startdate)) {
 		$valid = false;
 	}
-	if (empty($enddate)) {
-		$valid = false;
-	}
-	if (empty($allottedtime)) {
-		$valid = false;
-	}
-	if (empty($endclient)) {
-		$valid = false;
-	}
-	if (empty($status)) {
-		$valid = false;
-	}
-	if (empty($technologyused)) {
-		$valid = false;
-	}
+	
 
 
 	// update data
@@ -175,7 +161,7 @@ else {
 					<label class="control-label">End Date</label>
 					<div class="controls">
 						<input name="enddate" type="date" placeholder="end date"
-							value="<?php echo !empty($enddate)?$enddate:'';?>" required>
+							value="<?php echo !empty($enddate)?$enddate:'';?>" >
 
 					</div>
 				</div>
@@ -209,7 +195,7 @@ else {
 					<label class="control-label">End Client</label>
 					<div class="controls">
 						<input name="endclient" type="text" placeholder="end client"
-							value="<?php echo !empty($endclient)?$endclient:'';?>" required>
+							value="<?php echo !empty($endclient)?$endclient:'';?>" >
 
 					</div>
 				</div>
@@ -244,7 +230,7 @@ else {
 						<input name="technologyused" type="text"
 							placeholder="technology used"
 							value="<?php echo !empty($technologyused)?$technologyused:'';?>"
-							required>
+							>
 
 					</div>
 				</div>

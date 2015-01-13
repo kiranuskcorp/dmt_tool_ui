@@ -18,16 +18,11 @@ if ( !empty($_POST)) {
 
 	// validate input
 	$valid = true;
-	if (empty($interviewid)) {
-		$valid = false;
-	}
+	
 	if (empty($question)) {
 		$valid = false;
 	}
-	if (empty($answers)) {
-		$valid = false;
-	}
-
+	
 
 		
 	// insert data
@@ -100,7 +95,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">Answers</label>
 					<div class="controls">
 						<textarea name="answers" type="text" placeholder="answers"
-							value="<?php echo !empty($answers)?$answers:'';?>" required>
+							value="<?php echo !empty($answers)?$answers:'';?>" >
 					    	</textarea>
 					</div>
 				</div>

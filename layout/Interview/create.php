@@ -30,21 +30,11 @@ if ( !empty($_POST)) {
 	if (empty($traineeid)) {
 		$valid = false;
 	}
-	if (empty($assistedby)) {
-		$valid = false;
-	}
-	if (empty($clientid)) {
-		$valid = false;
-	}
+	
 	if (empty($interviewer)) {
 		$valid = false;
 	}
-	if (empty($time)) {
-		$valid = false;
-	}
-	if (empty($status)) {
-		$valid = false;
-	}
+	
 	if (empty($date)) {
 		$valid = false;
 	}
@@ -142,7 +132,7 @@ if ( !empty($_POST)) {
 					<div class="controls">
 						<input name="interviewer" type="text" placeholder="end client"
 							value="<?php echo !empty($interviewer)?$interviewer:'';?>"
-							required>
+							>
 
 					</div>
 				</div>

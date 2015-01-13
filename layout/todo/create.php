@@ -76,7 +76,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">Category</label>
 					<div class="controls">
 						<input name="category" type="text" placeholder="category"
-							value="<?php echo !empty($category)?$category:'';?>" required>
+							value="<?php echo !empty($category)?$category:'';?>" >
 
 					</div>
 				</div>

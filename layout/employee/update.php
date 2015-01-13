@@ -29,16 +29,8 @@
 		if (empty($name)) {
 			$valid = false;
 		}
-		if (empty($phone)) {
-			$valid = false;
-		}
+		
 		if (empty($email)) {
-			$valid = false;
-		}
-		if (empty($role)) {
-			$valid = false;
-		}
-		if (empty($basesalary)) {
 			$valid = false;
 		}
 		
@@ -97,7 +89,7 @@
 					   <div class="control-group ">
 					    <label class="control-label">Phone</label>
 					    <div class="controls">
-					      	<input name="phone" type="tel"  placeholder="phone" value="<?php echo !empty($phone)?$phone:'';?>" required>
+					      	<input name="phone" type="tel"  placeholder="phone" value="<?php echo !empty($phone)?$phone:'';?>" >
 					      	
 					    </div>
 					  </div>
@@ -142,7 +134,7 @@
 					  <div class="control-group ">
 					    <label class="control-label">Base Salary</label>
 					    <div class="controls">
-					      	<input name="basesalary" type="text"  placeholder="base salary" value="<?php echo !empty($basesalary)?$basesalary:'';?>" required>
+					      	<input name="basesalary" type="text"  placeholder="base salary" value="<?php echo !empty($basesalary)?$basesalary:'';?>" >
 					      	
 					    </div>
 					  </div>

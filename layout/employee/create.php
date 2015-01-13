@@ -102,7 +102,7 @@ if (! empty ( $_POST )) {
 					<div class="controls">
 						</i> <input name="phone" type="tel" maxlength="10"
 							pattern="[0-9]{10}" placeholder="phone"
-							value="<?php echo !empty($phone)?$phone:'';?>" required>
+							value="<?php echo !empty($phone)?$phone:'';?>" >
 
 					</div>
 				</div>
@@ -142,7 +142,7 @@ if (! empty ( $_POST )) {
 					<label class="control-label">Base salary</label>
 					<div class="controls">
 						<input name="basesalary" type="text" placeholder="base salary"
-							value="<?php echo !empty($basesalary)?$basesalary:'';?>" required>
+							value="<?php echo !empty($basesalary)?$basesalary:'';?>" >
 
 					</div>
 				</div>

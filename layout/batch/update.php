@@ -39,19 +39,7 @@ if (! empty ( $_POST )) {
 	if (empty ( $startdate )) {
 		$valid = false;
 	}
-	if (empty ( $enddate )) {
-		$valid = false;
-	}
-
-	if (empty ( $duration )) {
-		$valid = false;
-	}
-	if (empty ( $status )) {
-		$valid = false;
-	}
-	if (empty ( $time )) {
-		$valid = false;
-	}
+	
 
 	// update data
 	if ($valid) {

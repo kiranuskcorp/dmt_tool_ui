@@ -47,12 +47,7 @@ if ( !empty($_POST)) {
 	if (empty($interviewer)) {
 		$valid = false;
 	}
-	if (empty($time)) {
-		$valid = false;
-	} 
-	if (empty($status)) {
-		$valid = false;
-	}
+	
 	 if (empty($date)) {
 		$valid = false;
 	} 

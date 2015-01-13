@@ -137,7 +137,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">End Date</label>
 					<div class="controls">
 						<input name="enddate" type="date" placeholder="end date"
-							value="<?php echo !empty($enddate)?$enddate:'';?>" required>
+							value="<?php echo !empty($enddate)?$enddate:'';?>" >
 
 					</div>
 				</div>
@@ -161,7 +161,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">End Client</label>
 					<div class="controls">
 						<input name="endclient" type="text" placeholder="end client"
-							value="<?php echo !empty($endclient)?$endclient:'';?>" required>
+							value="<?php echo !empty($endclient)?$endclient:'';?>" >
 
 					</div>
 				</div>

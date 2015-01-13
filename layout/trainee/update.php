@@ -40,27 +40,17 @@ if ( !empty($_POST)) {
 	if (empty($email)) {
 		$valid = false;
 	}
-	if (empty($alternatephone)) {
-		$valid = false;
-	}
-	if (empty($clientid)) {
-		$valid = false;
-	}
+	
+	
 	if (empty($skypeid)) {
 		$valid = false;
 	}
-	if (empty($timezone)) {
-		$valid = false;
-	}
-	if (empty($batchid)) {
-		$valid = false;
-	}
+	
+	
 	if (empty($phone)) {
 		$valid = false;
 	}
-	if (empty($technologyid)) {
-		$valid = false;
-	}
+	
 
 	// update data
 	if ($valid) {
@@ -233,7 +223,7 @@ else {
 					<label class="control-label">phone</label>
 					<div class="controls">
 						 <input name="phone" type="tel" placeholder="phone"
-							maxlength="10" value="<?php echo !empty($phone)?$phone:'';?>">
+							maxlength="10" value="<?php echo !empty($phone)?$phone:'';?>"required>
 
 					</div>
 				</div>
