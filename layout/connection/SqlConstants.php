@@ -56,7 +56,7 @@ class SqlConstants {
 
 			"batchSelect" => "SELECT b.*, t.name as technology_name, tr.name as trainer_name FROM batch b, technology t, trainer tr WHERE b.technology_id = t.id and b.trainer_id = tr.id order by b.id desc",
 			"batchInsert" => "INSERT INTO batch (technology_id,trainer_id,start_date,end_date,duration,status,created_date,description,time) values( ?,?,?,?,?,?,?,?,?)",
-			"batchDelete" => "DELETE FROM bactch  WHERE id = ?",
+			"batchDelete" => "DELETE FROM batch  WHERE id = ?",
 			"batchUpdate" => "UPDATE batch set  technology_id=?,trainer_id=?,start_date=?,end_date=?,duration=?,status=?,updated_date=?,description=?,time=? WHERE id = ?",
 			"batchSelectById" => "SELECT * FROM batch where id = ?",
 
@@ -80,7 +80,7 @@ class SqlConstants {
 
 			"supportSelect" => "SELECT s.*,tr.name as trainee_name,e.name as employee_name FROM support s,trainee tr,employee e WHERE s.trainee_id=tr.id AND s.supported_by=e.id order by s.start_date desc",
 			"supportInsert" => "INSERT INTO support ( trainee_id, supported_by, start_date, end_date, allotted_time, end_client, status, technology_used, created_date, description) values(?, ?,?,?,?,?,?,?,?,?)",
-			"supportwDelete" => "DELETE FROM support  WHERE id = ?",
+			"supportDelete" => "DELETE FROM support  WHERE id = ?",
 			"supportUpdate" => "UPDATE support set  trainee_id=?,supported_by=?,start_date=?,end_date=?,allotted_time=?,end_client=?,status=?,technology_used=?,updated_date=?,description=? WHERE id = ?",
 			"supportSelectById" => "SELECT * FROM support where id = ?" ,
 
