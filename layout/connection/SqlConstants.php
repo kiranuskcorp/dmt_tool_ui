@@ -85,8 +85,10 @@ class SqlConstants {
 			"supportSelectById" => "SELECT * FROM support where id = ?" ,
 
 			
-			"usercreds"=>"select * From user_creds"
-
+			"usercredsselect" => "select * From user_creds where  username=? AND password=?",
+			"usercredsInsert" => "INSERT INTO usercreds ( username, password, role) values(?,?,?)",
+			"usercredsSelectById" => "SELECT * FROM usercreds where id = ?" ,
+ 
 	)
 	;
 	static $totalConstants = array(

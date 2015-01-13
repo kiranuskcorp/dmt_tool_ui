@@ -40,9 +40,7 @@ if ( !empty($_POST)) {
 
 }
 
-/*if ( !empty($_GET)) {
- echo "<script type='text/javascript'>alert('get');</script>";
-}*/
+
 ?>
 
 

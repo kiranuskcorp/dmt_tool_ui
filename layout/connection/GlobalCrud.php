@@ -14,6 +14,8 @@ class GlobalCrud {
 		return $data;
 		Database::disconnect ();
 	}
+	
+	
 	public static function delete($value, $id) {
 		$pdo = Database::connect ();
 		$pdo->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
