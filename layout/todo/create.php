@@ -18,19 +18,19 @@ if ( !empty($_POST)) {
 
 	// validate input
 	$valid = true;
-	if (empty($category)) {
+	/* if (empty($category)) {
 		$valid = false;
 	}
 	if (empty($status)) {
 		$valid = false;
-	}
+	} */
 	if (empty($assignedto)) {
 		$valid = false;
 	}
-	if (empty($estimatedtime)) {
+	/* if (empty($estimatedtime)) {
 		$valid = false;
 	}
-
+ */
 
 
 
@@ -122,7 +122,7 @@ if ( !empty($_POST)) {
 						<input name="estimatedtime" type="text"
 							placeholder="estimated days"
 							value="<?php echo !empty($estimatedtime)?$estimatedtime:'';?>"
-							required>
+							>
 
 					</div>
 				</div>

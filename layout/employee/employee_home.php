@@ -20,8 +20,8 @@
 		                  <th> Phone</th>
 		                  <th> Email</th>
 		                  <th> Role</th>
-		                  <th> Base Salary</th>
-		                  <!--  <th>Created Date</th>
+		                  <!--<th> Base Salary</th>
+		                    <th>Created Date</th>
 		                  <th>Updated Date</th>
 		                   <th>Description</th>-->
 		                   <th data-sort-ignore="true">Action</th>
@@ -39,7 +39,7 @@
 							   	echo '<td>'. $row['phone'] . '</td>';
 							   	echo '<td>'. $row['email'] . '</td>';
 							   	echo '<td>'. $row['role'] . '</td>';
-							   	echo '<td>'. $row['base_salary'] . '</td>';
+							   	//echo '<td>'. $row['base_salary'] . '</td>';
 							   //	echo '<td>'. $row['created_date'] . '</td>';
 							   //	echo '<td>'. $row['updated_date'] . '</td>';
 							   	//echo '<td>'. $row['description'] . '</td>';

@@ -10,7 +10,7 @@ if (! empty ( $_POST )) {
 	$phone = $_POST ['phone'];
 	$email = $_POST ['email'];
 	$role = $_POST ['role'];
-	$basesalary = $_POST ['basesalary'];
+	//$basesalary = $_POST ['basesalary'];
 	$createdDate = date ( "Y/m/d" );
 	// $updatedDate = $_POST ['updatedDate'];
 	$description = $_POST ['description'];
@@ -20,18 +20,18 @@ if (! empty ( $_POST )) {
 	if (empty ( $name )) {
 		$valid = false;
 	}
-	if (empty ( $phone )) {
+	/* if (empty ( $phone )) {
 		$valid = false;
 	}
-	if (empty ( $email )) {
+	 */if (empty ( $email )) {
 		$valid = false;
 	}
-	if (empty ( $role )) {
+	/* if (empty ( $role )) {
 		$valid = false;
-	}
-	if (empty ( $basesalary )) {
+	} */
+	/* if (empty ( $basesalary )) {
 		$valid = false;
-	}
+	} */
 	
 	// insert data
 	if ($valid) {
@@ -138,14 +138,14 @@ if (! empty ( $_POST )) {
 					</div>
 				</div>
 
-				<div class="control-group">
+				<!-- <div class="control-group">
 					<label class="control-label">Base salary</label>
 					<div class="controls">
 						<input name="basesalary" type="text" placeholder="base salary"
 							value="<?php echo !empty($basesalary)?$basesalary:'';?>" >
 
 					</div>
-				</div>
+				</div> -->
 
 
 				<div class="control-group">

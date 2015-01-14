@@ -44,10 +44,10 @@ if ( !empty($_POST)) {
 	if (empty($clientid)) {
 		$valid = false;
 	}
-	if (empty($interviewer)) {
+	/* if (empty($interviewer)) {
 		$valid = false;
 	}
-	
+	 */
 	 if (empty($date)) {
 		$valid = false;
 	} 
@@ -170,7 +170,7 @@ else {
 					<div class="controls">
 						<input name="interviewer" type="text" placeholder="end client"
 							value="<?php echo !empty($interviewer)?$interviewer:'';?>"
-							required>
+							>
 
 					</div>
 				</div>

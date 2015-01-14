@@ -40,14 +40,21 @@ if ( !empty($_POST)) {
 	if (empty($email)) {
 		$valid = false;
 	}
-	
+	if (empty ( $clientid )) {
+		$valid = false;
+	}
 	
 	if (empty($skypeid)) {
 		$valid = false;
 	}
-	
+	if (empty ( $batchid )) {
+		$valid = false;
+	}
 	
 	if (empty($phone)) {
+		$valid = false;
+	}
+	if (empty ( $technologyid )) {
 		$valid = false;
 	}
 	
@@ -141,9 +148,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['name'];
@@ -177,9 +182,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$constant?>
-								" >
+								value="<?=$constant?>" >
 								<?php
 							}
 							echo $constant;
@@ -204,9 +207,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['id'];
@@ -249,9 +250,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['name'];

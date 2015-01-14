@@ -74,7 +74,7 @@ class SqlConstants {
 
 			"questionSelect" => "SELECT q.*, i.interviewer as interview_name FROM question q, interview i WHERE q.interview_id= i.id order by q.id desc",
 			"questionInsert" => "INSERT INTO question ( interview_id, question, answers, created_date, description) values(?, ?, ?,?,?)",
-			"questionwDelete" => "DELETE FROM question  WHERE id = ?",
+			"questionDelete" => "DELETE FROM question  WHERE id = ?",
 			"questionUpdate" => "UPDATE question set  interview_id=?,question=?,answers=?,updated_date=?,description=? WHERE id = ?",
 			"questionSelectById" => "SELECT * FROM question where id = ?",
 

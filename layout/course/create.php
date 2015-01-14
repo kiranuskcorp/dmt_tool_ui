@@ -19,13 +19,7 @@ if ( !empty($_POST)) {
 	if (empty($technologyid)) {
 		$valid = false;
 	}
-	if (empty($name)) {
-		$valid = false;
-	}
-	if (empty($esthrs)) {
-		$valid = false;
-	}
-
+	
 
 
 
@@ -95,7 +89,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">Name</label>
 					<div class="controls">
 						<input name="name" type="text" placeholder="name"
-							value="<?php echo !empty($name)?$name:'';?>" required>
+							value="<?php echo !empty($name)?$name:'';?>" >
 
 					</div>
 				</div>
@@ -105,7 +99,7 @@ if ( !empty($_POST)) {
 					<label class="control-label">Estimated Hours </label>
 					<div class="controls">
 						<input name="esthrs" type="text" placeholder="estimated hours"
-							value="<?php echo !empty($esthrs)?$esthrs:'';?>" required>
+							value="<?php echo !empty($esthrs)?$esthrs:'';?>" >
 
 					</div>
 				</div>

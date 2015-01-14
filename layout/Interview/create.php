@@ -30,11 +30,12 @@ if ( !empty($_POST)) {
 	if (empty($traineeid)) {
 		$valid = false;
 	}
-	
-	if (empty($interviewer)) {
+	if (empty($assistedby)) {
 		$valid = false;
 	}
-	
+	if (empty($clientid)) {
+		$valid = false;
+	}
 	if (empty($date)) {
 		$valid = false;
 	}
@@ -84,7 +85,7 @@ if ( !empty($_POST)) {
 					<div class="form-group required">
 						<label class="control-label">Trainee Name</label>
 						<div class="controls">
-							<select name="traineeid" type="text">
+							<select name="traineeid" type="text" required>
 								<option value="0">Select</option>
 								<?php foreach ($traineeData as $row): ?>
 								<option value="<?=$row['id']?>">

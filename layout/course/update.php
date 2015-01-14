@@ -27,13 +27,13 @@
 		if (empty($technologyid)) {
 			$valid = false;
 		}
-		if (empty($name)) {
+		/* if (empty($name)) {
 			$valid = false;
 		}
 		if (empty($esthrs)) {
 			$valid = false;
 		}
-		
+		 */
 		
 		// update data
 		if ($valid) {
@@ -113,7 +113,7 @@
 					<label class="control-label">Name</label>
 					<div class="controls">
 						<input name="name" type="text" placeholder="name"
-							value="<?php echo !empty($name)?$name:'';?>" required>
+							value="<?php echo !empty($name)?$name:'';?>" >
 
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 					<label class="control-label">Estimated Hours </label>
 					<div class="controls">
 						<input name="esthrs" type="text" placeholder="esthrs"
-							value="<?php echo !empty($esthrs)?$esthrs:'';?>" required>
+							value="<?php echo !empty($esthrs)?$esthrs:'';?>">
 
 					</div>
 				</div>

@@ -19,7 +19,7 @@
 		$phone = $_POST['phone'];
 		$email = $_POST['email'];
 		$role = $_POST['role'];
-		$basesalary = $_POST['basesalary'];
+		//$basesalary = $_POST['basesalary'];
 		//$createdDate = $_POST['createdDate'];
 		$updatedDate = date("Y/m/d");
 		$description = $_POST['description'];
@@ -131,13 +131,13 @@
 					</div>
 				</div>
 					  
-					  <div class="control-group ">
+					  <!-- <div class="control-group ">
 					    <label class="control-label">Base Salary</label>
 					    <div class="controls">
 					      	<input name="basesalary" type="text"  placeholder="base salary" value="<?php echo !empty($basesalary)?$basesalary:'';?>" >
 					      	
 					    </div>
-					  </div>
+					  </div> -->
 					   
 					
 					   <div class="control-group ">

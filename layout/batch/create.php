@@ -31,19 +31,7 @@ if (! empty ( $_POST )) {
 	if (empty ( $startdate )) {
 		$valid = false;
 	}
-	if (empty ( $enddate )) {
-		$valid = false;
-	}
-	if (empty ( $duration )) {
-		$valid = false;
-	}
-	if (empty ( $status )) {
-		$valid = false;
-	}
-	if (empty ( $time )) {
-		$valid = false;
-	}
-
+	
 	// insert data
 	if ($valid) {
 		$sql = "batchInsert";
@@ -152,7 +140,7 @@ if (! empty ( $_POST )) {
 					<label class="control-label">End Date</label>
 					<div class="controls">
 						<input name="enddate" type="date" placeholder="end date"
-							value="<?php echo !empty($enddate)?$enddate:'';?>" required>
+							value="<?php echo !empty($enddate)?$enddate:'';?>" >
 					</div>
 				</div>
 
@@ -160,7 +148,7 @@ if (! empty ( $_POST )) {
 					<label class="control-label">Duration</label>
 					<div class="controls">
 						<input name="duration" type="text" placeholder="duration"
-							value="<?php echo !empty($duration)?$duration:'';?>" required>
+							value="<?php echo !empty($duration)?$duration:'';?>" >
 					</div>
 				</div>
 

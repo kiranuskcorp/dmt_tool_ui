@@ -25,6 +25,9 @@ if ( !empty($_POST)) {
 	// validate input
 	$valid = true;
 	
+	if (empty($interviewid)) {
+		$valid = false;
+	}
 	if (empty($question)) {
 		$valid = false;
 	}
@@ -86,9 +89,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['interviewer'];

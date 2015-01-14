@@ -34,15 +34,15 @@ if (! empty ( $_POST )) {
 	if (empty ( $alternatephone )) {
 		$valid = false;
 	}
-	if (empty ( $clientid )) {
+ 	if (empty ( $clientid )) {
 		$valid = false;
 	}
-	if (empty ( $skypeid )) {
+    if (empty ( $skypeid )) {
 		$valid = false;
 	}
-	if (empty ( $timezone )) {
+	/* if (empty ( $timezone )) {
 		$valid = false;
-	}
+	} */
 	if (empty ( $batchid )) {
 		$valid = false;
 	}

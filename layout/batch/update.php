@@ -123,9 +123,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['name'];
@@ -159,9 +157,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$row['id']?>
-								" >
+								value="<?=$row['id']?>" >
 								<?php
 							}
 							echo $row ['name'];
@@ -185,7 +181,7 @@ else {
 					<label class="control-label">End Date</label>
 					<div class="controls">
 						<input name="enddate" type="date" placeholder="end date"
-							value="<?php echo !empty($enddate)?$enddate:'';?>" required>
+							value="<?php echo !empty($enddate)?$enddate:'';?>" >
 
 					</div>
 				</div>
@@ -194,7 +190,7 @@ else {
 					<label class="control-label">Duration</label>
 					<div class="controls">
 						<input name="duration" type="text" placeholder="duration"
-							value="<?php echo !empty($duration)?$duration:'';?>" required>
+							value="<?php echo !empty($duration)?$duration:'';?>" >
 
 					</div>
 				</div>
@@ -215,9 +211,7 @@ else {
 							}
 							else {
 								?>
-								value="
-								<?=$supportConstant?>
-								" >
+								value="<?=$supportConstant?>" >
 								<?php
 							}
 							echo $supportConstant;
@@ -242,9 +236,7 @@ else {
 }
 else {
 								?>
-								value="
-								<?=$constant?>
-								" >
+								value="<?=$constant?>" >
 								<?php
 							}
 							echo $constant;

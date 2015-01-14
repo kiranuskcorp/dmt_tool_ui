@@ -35,7 +35,7 @@ if ( !empty($_POST)) {
 	if (empty($startdate)) {
 		$valid = false;
 	}
-	if (empty($enddate)) {
+	/* if (empty($enddate)) {
 		$valid = false;
 	}
 	if (empty($allottedtime)) {
@@ -50,7 +50,7 @@ if ( !empty($_POST)) {
 	if (empty($technologyused)) {
 		$valid = false;
 	}
-
+ */
 
 
 	// insert data
@@ -171,7 +171,7 @@ if ( !empty($_POST)) {
 						<input name="technologyused" type="text"
 							placeholder="technology used"
 							value="<?php echo !empty($technologyused)?$technologyused:'';?>"
-							required>
+							>
 
 					</div>
 				</div>
