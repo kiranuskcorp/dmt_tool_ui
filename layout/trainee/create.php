@@ -43,9 +43,9 @@ if (! empty ( $_POST )) {
 	/* if (empty ( $timezone )) {
 		$valid = false;
 	} */
-	if (empty ( $batchid )) {
+	/* if (empty ( $batchid )) {
 		$valid = false;
-	}
+	} */
 	if (empty ( $phone )) {
 		$valid = false;
 	}
@@ -151,9 +151,10 @@ if (! empty ( $_POST )) {
 
 
 				<div class="control-group">
+				<div class="form-group required">
 					<label class="control-label">Client</label>
 					<div class="controls">
-						<select name="clientid" type="text">
+						<select name="clientid" type="text" required>
 							<option value="0">Select</option>
 							<?php foreach ($dataClient as $row): ?>
 							<option value="<?=$row['id']?>">
@@ -161,6 +162,7 @@ if (! empty ( $_POST )) {
 								<?php endforeach ?>
 							</option>
 						</select>
+					</div>
 					</div>
 				</div>
 
@@ -226,6 +228,7 @@ if (! empty ( $_POST )) {
 					    </div>
 					  </div> -->
 				<div class="control-group">
+				<div class="form-group required">
 					<label class="control-label">Technology</label>
 					<div class="controls">
 						<select name="technologyid" type="text">
@@ -236,6 +239,7 @@ if (! empty ( $_POST )) {
 								<?php endforeach ?>
 							</option>
 						</select>
+						</div>
 					</div>
 				</div>
 

@@ -47,9 +47,9 @@ if ( !empty($_POST)) {
 	if (empty($skypeid)) {
 		$valid = false;
 	}
-	if (empty ( $batchid )) {
+	/* if (empty ( $batchid )) {
 		$valid = false;
-	}
+	} */
 	
 	if (empty($phone)) {
 		$valid = false;

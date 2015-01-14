@@ -98,6 +98,7 @@ if ( !empty($_POST)) {
 				</div>
 
 				<div class="control-group">
+				<div class="form-group required">
 					<label class="control-label">Assisted By</label>
 					<div class="controls">
 						<select name="assistedby" type="text">
@@ -109,10 +110,12 @@ if ( !empty($_POST)) {
 							</option>
 						</select>
 					</div>
+					</div>
 				</div>
 
 
 				<div class="control-group">
+				<div class="form-group required">
 					<label class="control-label">Client Name</label>
 					<div class="controls">
 						<select name="clientid" type="text">
@@ -123,6 +126,7 @@ if ( !empty($_POST)) {
 								<?php endforeach ?>
 							</option>
 						</select>
+						</div>
 					</div>
 				</div>
 

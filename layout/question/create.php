@@ -68,6 +68,7 @@ if ( !empty($_POST)) {
 				method="post">
 
 				<div class="control-group">
+				<div class="form-group required">
 					<label class="control-label">End Cilent</label>
 					<div class="controls">
 						<select name="interviewid" type="text">
@@ -78,6 +79,7 @@ if ( !empty($_POST)) {
 								<?php endforeach ?>
 							</option>
 						</select>
+						</div>
 					</div>
 				</div>
 
